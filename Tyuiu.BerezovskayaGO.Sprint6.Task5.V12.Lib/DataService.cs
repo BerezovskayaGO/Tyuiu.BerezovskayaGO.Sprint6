@@ -30,5 +30,6 @@ namespace Tyuiu.BerezovskayaGO.Sprint6.Task5.V12.Lib
 
                 return numsArray;
             }
+        }
     }
 }
