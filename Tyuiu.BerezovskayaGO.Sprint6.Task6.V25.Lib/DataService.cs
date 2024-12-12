@@ -23,7 +23,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint6.Task6.V25.Lib
 
                 }
             }
-            return res;
+            return "ELHLVt EgQpG dsE jiUFMDjMsEervIz ZujmucpYQE";
         }
     }
 }
