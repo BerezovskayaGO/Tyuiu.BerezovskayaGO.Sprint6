@@ -47,7 +47,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Tyuiu.BerezovskayaGO.Sprint6.Task6.V25.photo_2024 - 07 - 01_17 - 18 - 45;
+            this.pictureBox1.Image = global::Tyuiu.SugrovskiyNI.Sprint6.Task6.V25.Properties.Resources._5vfObP_iu7E;
             this.pictureBox1.Location = new System.Drawing.Point(22, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 192);

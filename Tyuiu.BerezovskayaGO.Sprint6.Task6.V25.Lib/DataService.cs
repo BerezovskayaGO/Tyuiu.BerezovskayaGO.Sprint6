@@ -38,10 +38,5 @@ namespace Tyuiu.BerezovskayaGO.Sprint6.Task6.V25.Lib
             resStr = resStr.Trim();
             return resStr;
         }
-
-        public string CollectTextFromFile(string path)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

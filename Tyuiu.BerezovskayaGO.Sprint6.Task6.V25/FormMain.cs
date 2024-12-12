@@ -29,4 +29,5 @@ namespace Tyuiu.BerezovskayaGO.Sprint6.Task6.V25
             groupBoxOutPutData.Text = groupBoxOutPutData.Text + " " + openFileDialog1.FileName;
             buttonDone.Enabled = true;
         }
+    }
 }
