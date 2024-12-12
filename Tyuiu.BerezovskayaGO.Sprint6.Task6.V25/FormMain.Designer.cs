@@ -24,192 +24,157 @@ namespace Tyuiu.BerezovskayaGO.Sprint6.Task6.V25
         #region Windows Form Designer generated code
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonDone = new System.Windows.Forms.Button();
-            this.FileName = new System.Windows.Forms.Button();
-            this.FormAbout = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBoxLoadFromFile = new System.Windows.Forms.TextBox();
-            this.groupBoxOutPutData = new System.Windows.Forms.TextBox();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            groupBoxCondition_IPG = new GroupBox();
+            textBoxCondition_IPG = new TextBox();
+            groupBoxOutput_IPG = new GroupBox();
+            textBoxOutput_IPG = new TextBox();
+            groupBoxInput_IPG = new GroupBox();
+            textBoxInput_IPG = new TextBox();
+            buttonOpenFile_IPG = new Button();
+            buttonDone_IPG = new Button();
+            buttonHelp_IPG = new Button();
+            openFileDialogTask_IPG = new OpenFileDialog();
+            toolTipTask_IPG = new ToolTip(components);
+            groupBoxCondition_IPG.SuspendLayout();
+            groupBoxOutput_IPG.SuspendLayout();
+            groupBoxInput_IPG.SuspendLayout();
+            SuspendLayout();
             // 
-            // panel1
+            // groupBoxCondition_IPG
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.buttonDone);
-            this.panel1.Controls.Add(this.FileName);
-            this.panel1.Controls.Add(this.FormAbout);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1229, 87);
-            this.panel1.TabIndex = 0;
+            groupBoxCondition_IPG.Controls.Add(textBoxCondition_IPG);
+            groupBoxCondition_IPG.Location = new Point(12, 188);
+            groupBoxCondition_IPG.Name = "groupBoxCondition_IPG";
+            groupBoxCondition_IPG.Size = new Size(1345, 200);
+            groupBoxCondition_IPG.TabIndex = 0;
+            groupBoxCondition_IPG.TabStop = false;
+            groupBoxCondition_IPG.Text = "Условие: ";
             // 
-            // panel2
+            // textBoxCondition_IPG
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 90);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1223, 81);
-            this.panel2.TabIndex = 1;
+            textBoxCondition_IPG.BorderStyle = BorderStyle.None;
+            textBoxCondition_IPG.Location = new Point(23, 32);
+            textBoxCondition_IPG.Multiline = true;
+            textBoxCondition_IPG.Name = "textBoxCondition_IPG";
+            textBoxCondition_IPG.ReadOnly = true;
+            textBoxCondition_IPG.Size = new Size(1316, 126);
+            textBoxCondition_IPG.TabIndex = 0;
+            textBoxCondition_IPG.Text = resources.GetString("textBoxCondition_IPG.Text");
             // 
-            // buttonDone
+            // groupBoxOutput_IPG
             // 
-            this.buttonDone.Image = global::Tyuiu.SugrovskiyNI.Sprint6.Task6.V25.Properties.Resources.textblock_1054__1_;
-            this.buttonDone.Location = new System.Drawing.Point(91, 12);
-            this.buttonDone.Name = "buttonDone";
-            this.buttonDone.Size = new System.Drawing.Size(73, 60);
-            this.buttonDone.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.buttonDone, "Производит поиск");
-            this.buttonDone.UseVisualStyleBackColor = true;
-            this.buttonDone.Click += new System.EventHandler(this.buttonDone_Click);
+            groupBoxOutput_IPG.Controls.Add(textBoxOutput_IPG);
+            groupBoxOutput_IPG.Location = new Point(773, 394);
+            groupBoxOutput_IPG.Name = "groupBoxOutput_IPG";
+            groupBoxOutput_IPG.Size = new Size(584, 462);
+            groupBoxOutput_IPG.TabIndex = 0;
+            groupBoxOutput_IPG.TabStop = false;
+            groupBoxOutput_IPG.Text = "Вывод: ";
             // 
-            // FileName
+            // textBoxOutput_IPG
             // 
-            this.FileName.Image = ((System.Drawing.Image)(resources.GetObject("FileName.Image")));
-            this.FileName.Location = new System.Drawing.Point(6, 12);
-            this.FileName.Name = "FileName";
-            this.FileName.Size = new System.Drawing.Size(79, 60);
-            this.FileName.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.FileName, "Открыть файл");
-            this.FileName.UseVisualStyleBackColor = true;
-            this.FileName.Click += new System.EventHandler(this.buttonOpenFile_Click);
+            textBoxOutput_IPG.BorderStyle = BorderStyle.None;
+            textBoxOutput_IPG.Location = new Point(6, 38);
+            textBoxOutput_IPG.Multiline = true;
+            textBoxOutput_IPG.Name = "textBoxOutput_IPG";
+            textBoxOutput_IPG.Size = new Size(572, 414);
+            textBoxOutput_IPG.TabIndex = 0;
             // 
-            // FormAbout
+            // groupBoxInput_IPG
             // 
-            this.FormAbout.Image = global::Tyuiu.SugrovskiyNI.Sprint6.Task6.V25.Properties.Resources.question_icon_205993;
-            this.FormAbout.Location = new System.Drawing.Point(1146, 6);
-            this.FormAbout.Name = "FormAbout";
-            this.FormAbout.Size = new System.Drawing.Size(80, 66);
-            this.FormAbout.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.FormAbout, "Чтобы узнать автора программы");
-            this.FormAbout.UseVisualStyleBackColor = true;
-            this.FormAbout.Click += new System.EventHandler(this.buttonHelp_Click);
+            groupBoxInput_IPG.Controls.Add(textBoxInput_IPG);
+            groupBoxInput_IPG.Location = new Point(12, 394);
+            groupBoxInput_IPG.Name = "groupBoxInput_IPG";
+            groupBoxInput_IPG.Size = new Size(755, 462);
+            groupBoxInput_IPG.TabIndex = 0;
+            groupBoxInput_IPG.TabStop = false;
+            groupBoxInput_IPG.Text = "Ввод: ";
             // 
-            // groupBox1
+            // textBoxInput_IPG
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Location = new System.Drawing.Point(0, 90);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1229, 81);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Условие";
+            textBoxInput_IPG.BorderStyle = BorderStyle.None;
+            textBoxInput_IPG.Location = new Point(11, 38);
+            textBoxInput_IPG.Multiline = true;
+            textBoxInput_IPG.Name = "textBoxInput_IPG";
+            textBoxInput_IPG.Size = new Size(738, 414);
+            textBoxInput_IPG.TabIndex = 0;
             // 
-            // textBox3
+            // buttonOpenFile_IPG
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 21);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(1217, 54);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.Text = resources.GetString("textBox3.Text");
+            buttonOpenFile_IPG.BackgroundImage = (Image)resources.GetObject("buttonOpenFile_IPG.BackgroundImage");
+            buttonOpenFile_IPG.Location = new Point(35, 41);
+            buttonOpenFile_IPG.Name = "buttonOpenFile_IPG";
+            buttonOpenFile_IPG.Size = new Size(163, 107);
+            buttonOpenFile_IPG.TabIndex = 1;
+            buttonOpenFile_IPG.UseVisualStyleBackColor = true;
+            buttonOpenFile_IPG.Click += buttonOpenFile_IPG_Click;
             // 
-            // textBoxLoadFromFile
+            // buttonDone_IPG
             // 
-            this.textBoxLoadFromFile.Location = new System.Drawing.Point(9, 181);
-            this.textBoxLoadFromFile.Multiline = true;
-            this.textBoxLoadFromFile.Name = "textBoxLoadFromFile";
-            this.textBoxLoadFromFile.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxLoadFromFile.Size = new System.Drawing.Size(608, 363);
-            this.textBoxLoadFromFile.TabIndex = 2;
+            buttonDone_IPG.BackgroundImage = (Image)resources.GetObject("buttonDone_IPG.BackgroundImage");
+            buttonDone_IPG.Location = new Point(290, 41);
+            buttonDone_IPG.Name = "buttonDone_IPG";
+            buttonDone_IPG.Size = new Size(136, 107);
+            buttonDone_IPG.TabIndex = 1;
+            buttonDone_IPG.UseVisualStyleBackColor = true;
+            buttonDone_IPG.Click += buttonDone_IPG_Click;
             // 
-            // groupBoxOutPutData
+            // buttonHelp_IPG
             // 
-            this.groupBoxOutPutData.Location = new System.Drawing.Point(622, 181);
-            this.groupBoxOutPutData.Multiline = true;
-            this.groupBoxOutPutData.Name = "groupBoxOutPutData";
-            this.groupBoxOutPutData.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.groupBoxOutPutData.Size = new System.Drawing.Size(601, 363);
-            this.groupBoxOutPutData.TabIndex = 3;
+            buttonHelp_IPG.BackgroundImage = (Image)resources.GetObject("buttonHelp_IPG.BackgroundImage");
+            buttonHelp_IPG.Location = new Point(1079, 52);
+            buttonHelp_IPG.Name = "buttonHelp_IPG";
+            buttonHelp_IPG.Size = new Size(145, 107);
+            buttonHelp_IPG.TabIndex = 1;
+            buttonHelp_IPG.UseVisualStyleBackColor = true;
+            buttonHelp_IPG.Click += buttonHelp_IPG_Click;
             // 
-            // splitter1
+            // openFileDialogTask_IPG
             // 
-            this.splitter1.Location = new System.Drawing.Point(0, 87);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 457);
-            this.splitter1.TabIndex = 4;
-            this.splitter1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 168);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 17);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Ввод данных";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(623, 174);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 17);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Вывод данных";
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialogTask";
+            openFileDialogTask_IPG.FileName = "openFileDialog1";
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1229, 544);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.splitter1);
-            this.Controls.Add(this.groupBoxOutPutData);
-            this.Controls.Add(this.textBoxLoadFromFile);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
-            this.Name = "FormMain";
-            this.Text = "Спринт 6 | Такс 6| Вариант 25 | Березовская Г. О.";
-            this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1369, 858);
+            Controls.Add(buttonHelp_IPG);
+            Controls.Add(buttonDone_IPG);
+            Controls.Add(buttonOpenFile_IPG);
+            Controls.Add(groupBoxInput_IPG);
+            Controls.Add(groupBoxOutput_IPG);
+            Controls.Add(groupBoxCondition_IPG);
+            Name = "FormMain";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Спринт 6 | Таск 6| Вариант 25| Березовская Г. О.";
+            groupBoxCondition_IPG.ResumeLayout(false);
+            groupBoxCondition_IPG.PerformLayout();
+            groupBoxOutput_IPG.ResumeLayout(false);
+            groupBoxOutput_IPG.PerformLayout();
+            groupBoxInput_IPG.ResumeLayout(false);
+            groupBoxInput_IPG.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button buttonDone;
-        private System.Windows.Forms.Button FileName;
-        private System.Windows.Forms.Button FormAbout;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBoxLoadFromFile;
-        private System.Windows.Forms.TextBox groupBoxOutPutData;
-        private System.Windows.Forms.Splitter splitter1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private GroupBox groupBoxCondition_IPG;
+        private GroupBox groupBoxOutput_IPG;
+        private GroupBox groupBoxInput_IPG;
+        private TextBox textBoxCondition_IPG;
+        private Button buttonOpenFile_IPG;
+        private Button buttonDone_IPG;
+        private Button buttonHelp_IPG;
+        private TextBox textBoxOutput_IPG;
+        private TextBox textBoxInput_IPG;
+        private OpenFileDialog openFileDialogTask_IPG;
+        private ToolTip toolTipTask_IPG;
     }
 }

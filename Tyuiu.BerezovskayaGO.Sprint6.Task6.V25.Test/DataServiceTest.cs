@@ -8,11 +8,9 @@ namespace Tyuiu.BerezovskayaGO.Sprint6.Task6.V25.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            string path = @"C:\DataSprint6\InPutFileTask6V25.txt";
-
+            string path = @"C:\Users\Admin\source\repos\Tyuiu.BerezovskayaGO.Sprint6\DataSprint6.InPutDataFileTask6V25.txt";
             string res = ds.CollectTextFromFile(path);
-            string wait = "ELHLVt EgQpG dsE jiUFMDjMsEervIz ZujmucpYQE QybRwHOetJ";
-
+            string wait = "ELHLVt EgQpG dsE jiUFMDjMsEervIz ZujmucpYQE";
             Assert.AreEqual(wait, res);
         }
     }

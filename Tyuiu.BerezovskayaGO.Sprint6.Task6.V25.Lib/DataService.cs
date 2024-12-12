@@ -4,39 +4,26 @@ namespace Tyuiu.BerezovskayaGO.Sprint6.Task6.V25.Lib
 {
     public class DataService : ISprint6Task6V25
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {
-            string resStr = "";
+            string res = "";
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (line == "")
+                    string[] words = line.Split(' ');
+                    foreach (string word in words)
                     {
-                        continue;
-                    }
-                    else
-                    {
-                        List<string> result = new List<string>();
-                        MatchCollection words = Regex.Matches(line, @"[А-Яа-яA-Za-z]+");
-                        foreach (var word in words)
+                        if (word.Contains('E'))
                         {
-                            result.Add(word.ToString());
+                            res = res + " " + word;
                         }
+                    }
 
-                        foreach (var word in result)
-                        {
-                            if (word.Contains("E") || word.Contains("e"))
-                            {
-                                resStr += word + " ";
-                            }
-                        }
-                    }
                 }
             }
-            resStr = resStr.Trim();
-            return resStr;
+            return res;
         }
     }
 }
